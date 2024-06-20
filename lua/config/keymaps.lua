@@ -8,6 +8,7 @@ local keymap = vim.keymap -- for conciseness
 
 keymap.set("n", "<C-S-Down>", "yyp", { desc = "Copy line down" })
 keymap.set("i", "<C-S-Down>", "<Esc>yyPgi", { desc = "Copy line down in insert mode" })
+keymap.set("v", "<C-S-Down>", "y`>pgv", { noremap = true, silent = true, desc = "Copy line down in visual mode" })
 
 -- Move line up with Alt-Up
 keymap.set("n", "<A-Up>", ":m .-2<CR>==", { desc = "Move line up" })
