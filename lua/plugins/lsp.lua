@@ -5,7 +5,7 @@ return {
   },
   opts = {
     inlay_hints = {
-      enabled = true,
+      enabled = false,
     },
   },
 }
